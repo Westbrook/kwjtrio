@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*--------------------------------------------
+
+				Defaults
+				
+---------------------------------------------*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+.left {
+float: left;
+}
+.right {
+float: right;
+}
+em {
+font-style: italic;
+}
+strong {
+font-weight: bold;
+}
+.hidden {
+display: none;
+}
+.offscreen {
+position: absolute;
+left: -999em;
+}
+
+/*--------------------------------------------
+
+				Layout
+				
+---------------------------------------------*/
+
+body {
+text-align: left;
+font-size: 62.5%;
+background: #3E3528;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+position: relative;
+height: 100%;
+color: #A2864E;
+}
+
+.container {
+width: 820px;
+margin: 0 auto;
+text-align: left;
+}
+
+.holder {
+float: left;
+margin: 20px 200px 40px;
+width: 400px;
+padding: 10px 10px 20px;
+border-top: 2px solid #695B40;
+border-bottom: 2px solid #695B40;
+position: relative;
+}
+
+
+/*--------------------------------------------
+
+				Navigation
+				
+---------------------------------------------*/
+
+.nav {
+position: absolute;
+width: 176px;
+top: 150px;
+left: 0px;
+margin-left: 30px;
+}
+
+.nav ul {
+float: left;
+width: 176px;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+.nav li {
+float: left;
+width: 150px;
+padding: 0 5px 0 15px;
+margin: 10px 0 0;
+border-bottom: 2px solid #695B40;
+border-left: 2px solid #695B40;
+text-align: left;
+}
+
+.nav .border {
+height: 50px;
+border: none;
+border-right: 2px solid #695B40;
+margin: 0;
+}
+
+.nav li a {
+float: left;
+width: 150px;
+color: #C1A468;
+font-size: 1.2em;
+line-height: 1.6em;
+text-decoration: none;
+}
+
+.nav li a:hover {
+color: #A2864E;
+}
+
+/*--------------------------------------------
+
+				Content
+				
+---------------------------------------------*/
+
+.holder h2 {
+padding: 15px 15px 0;
+font-size: 1.6em;
+font-weight: bold;
+}
+
+.holder p {
+font-size: 1.1em;
+line-height: 1.4em;
+padding: 15px 15px 0;
+}
+
+.holder ul {
+font-size: 1.1em;
+line-height: 1.4em;
+padding: 15px 15px 0 25px;
+}
+
+.holder ol {
+list-style: decimal;
+padding: 15px 15px 0 40px;
+}
+
+.holder img.spacer {
+padding: 15px 0 0;
+}
+
+.holder a {
+color: #C1A468;
+}
+
+.holder a:hover {
+text-decoration: none;
+}
+
+/*--------------------------------------------
+
+				Hodler Border
+				
+---------------------------------------------*/
+
+.border_top_left {
+position: absolute;
+height: 130px;
+border-left: 2px solid #695B40;
+top: 0;
+left: 0;
+}
+
+.border_top_right {
+position: absolute;
+height: 130px;
+border-left: 2px solid #695B40;
+top: 0;
+right: 0;
+}
+
+.border_bottom_left {
+position: absolute;
+height: 130px;
+border-left: 2px solid #695B40;
+bottom: 0;
+left: 0;
+}
+
+.border_bottom_right {
+position: absolute;
+height: 130px;
+border-left: 2px solid #695B40;
+bottom: 0;
+right: 0;
+}
